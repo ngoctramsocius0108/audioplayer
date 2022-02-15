@@ -1,0 +1,233 @@
+:root{
+  --primary-color: #9f6ea3;
+  --text-color: #333;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+body{
+  background-color: #f5f5f5;
+}
+html{
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* dashboard */
+.player{
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.player .icon-pause{
+  display: none;
+}
+.player.playing .icon-pause{
+  display: inline-block;
+}
+.player.playing .icon-play{
+  display: none;
+}
+.dashboard{
+  padding: 16px 16px 14px;
+  background-color: #1e0f2f;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 24px);
+  max-width: 456px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+/* header */
+header{
+  text-align: center;
+  margin-bottom:10px;
+}
+header h4{
+  color: var(--primary-color);
+  font-size: 12px;
+}
+header h2{
+  color: #fff;
+  font-size: 20px;
+}
+/* CD */
+.cd{
+  display: flex;
+  margin: auto;
+  width: 200px;
+
+}
+.cd-thumb{
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  background-size: cover;
+  margin: auto;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+}
+/* control */
+.control{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 18px 0 8px 0;
+}
+.control .btn{
+  color: #fff;
+  padding: 18px;
+  font-size: 18px;
+}
+.btn.active{
+  color: var(--primary-color);
+}
+.control .btn-toggle-play{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 35px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, #f661aa, #af1ecc, #5140fe);
+}
+/* time box */
+.progress-area,
+.volumesider {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.progress-area p,
+.volumesider p{
+  font-size: 14px;
+  color:#666;
+}
+/* progress */
+.progress, 
+.volume{
+  overflow: hidden;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #22254f;
+  outline: none;
+  opacity: 0.7;
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.progress{
+  width: 80%;
+  height: 10px;
+}
+.progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 10px;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: -600px 0 0 590px var(--primary-color);
+  cursor: pointer;
+  transition: 0.2s ease; 
+}
+.progress::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 10px;
+}
+
+/* volumesider */
+.volumesider{
+  padding-top: 5px;
+}
+.volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 6px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: -600px 0 0 595px  var(--primary-color);
+  cursor: pointer;
+  transition: 0.2s ease;
+  
+}
+.volume::-webkit-slider-runnable-track{
+  -webkit-appearance: none;
+  height: 6px;
+}
+.volume{
+  width: 80%;
+  height: 6px;
+}
+.volumeBtn{
+  color: var(--primary-color);
+  font-size:18px;
+}
+.volumesider .icon-unmute{
+  display: none;
+}
+.volumesider.active .icon-mute{
+  display: none;
+}
+.volumesider.active .icon-unmute{
+  display: inline-block;
+}
+/* playlist */
+
+.playlist{
+  padding: 12px;
+  padding-top: 414px;
+  background-color: #332149;
+}
+.song{
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  background-color: #210835;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+.song.active{
+  background-image: linear-gradient(45deg, #f661aa, #af1ecc, #5140fe);
+}
+.song:active{
+  opacity: 0.8;
+}
+.song.active .song-title,
+.song.active .song-author,
+.song.active .option{
+  color: #fff;
+}
+
+.song-thumb{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: cover;
+  margin: 0 8px;
+}
+.song-body{
+  flex: 1;
+  padding: 0 10px;
+}
+.song-title{
+  font-size: 16px;
+  line-height: 20px;
+  color: #FBF6F8;
+}
+.song-author{
+  font-size: 12px;
+  color: #D594EE;
+}
+.option{
+  padding: 16px 8px;
+  color: #FBF6F8;
+  font-size: 18px;
+}
+p{color:#fff};
