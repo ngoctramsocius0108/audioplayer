@@ -117,6 +117,37 @@ const app ={
         path: './assets/music/song11.mp3',
         image: './assets/img/11.jpg'
       },
+      {
+        name: 'Ngàn Nỗi Nhớ',
+        singer: 'The Men',
+        path: './assets/music/song16.mp3',
+        image: './assets/img/16.jpg'
+      },
+
+      {
+        name: 'Ngày Hạnh Phúc',
+        singer: 'Bằng Cường',
+        path: './assets/music/song17.mp3',
+        image: './assets/img/17.png'
+      },
+      {
+        name: 'Mơ Ngày Xa Xôi',
+        singer: 'Oanh Tiny',
+        path: './assets/music/song18.mp3',
+        image: './assets/img/18.jpg'
+      },
+      {
+        name: 'Tạm Biệt',
+        singer: 'Quang Vinh',
+        path: './assets/music/song19.mp3',
+        image: './assets/img/19.jpg'
+      },
+      {
+        name: 'Trái Tim Của Gió',
+        singer: 'Nam Cường x Việt My',
+        path: './assets/music/song20.mp3',
+        image: './assets/img/20.jpg'
+      },
   ],
   //storing user's data
   setConfig: function(key, value){
