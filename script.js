@@ -148,6 +148,26 @@ const app ={
         path: './assets/music/song20.mp3',
         image: './assets/img/20.jpg'
       },
+      {
+        name: 'Dường Như Ta Đã',
+        singer: 'Mỹ Tâm',
+        path: './assets/music/song21.mp3',
+        image: './assets/img/21.jpg'
+      },
+      {
+        name: 'Thu Cuối',
+        singer: 'YanBi x Hằng Bingboong',
+        path: './assets/music/song22.mp3',
+        image: './assets/img/22.jpg'
+      },
+
+      {
+        name: 'Chân Tình',
+        singer: 'Thái Engg X Thắng Nguyễn ',
+        path: './assets/music/song23.mp3',
+        image: './assets/img/23.jpg'
+      }
+
   ],
   //storing user's data
   setConfig: function(key, value){
